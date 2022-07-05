@@ -1,6 +1,6 @@
 let list = [];
 
-for (let i = 1; i <= 1000; i++) {
+for (let i = 1; i <= 50000; i++) {
   list.push(i);
 }
 
@@ -8,6 +8,7 @@ console.log(list);
 let primeNum = primeSieve(list);
 
 primeNum.forEach((num) => checkPrime(num));
+console.log(primeNum.length);
 
 console.log(primeNum);
 
