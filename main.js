@@ -6,17 +6,14 @@ console.log(list);
 console.log(list.length);
 
 function showPrime(limit) {
-  for (let number = 2; number <= limit; number++) {
+  for (let number = 2; number <= limit; number++)
     if (checkPrime(number)) list.push(number);
-  }
 }
 
 function checkPrime(num) {
   for (let factor = 2; factor < num; factor++) {
     if (factor > num / 2) break;
-    if (num % factor === 0) {
-      return false;
-    }
+    if (num % factor === 0) return false;
   }
   return true;
 }
