@@ -1,6 +1,6 @@
 let list = [];
 
-showPrime(1000000);
+showPrime(1000);
 console.log(list);
 // list.forEach((num) => console.log(num));
 console.log(list.length);
